@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    // function A() {
+    //     let a = 1
+    //     window.B = function () {
+    //         console.log(a)
+    //     }
+    // }
+    // A()
+    // B()
+
+    // function a() {
+    //     let b = 1
+    // }
+
+    // console.log(b);
+
+    // function a() {
+    //     var b = 1;
+
+    //     window.B = function () {
+    //         console.log(b);
+    //     }
+    // }
+    // a()
+    // B()
+    // for (let i = 1; i < 10; i++) {
+    //     setTimeout(() => {
+    //         console.log(i);
+    //     }, i * 1000);
+    // }
+
+    // for (var i = 1; i <= 5; i++) {
+    //     ;
+    //     (function (j) {
+    //         setTimeout(() => {
+    //             console.log(j)
+    //         }, j * 1000)
+    //     })(i)
+    // }
+
+
+    // function test1() {
+    //     console.log('aaaaaa');
+    // }
+
+    // function test2() {
+    //     let a = 10
+    //     window.test3 = () => {
+    //         console.log(a);
+
+    //     }
+    // }
+    // var a = 10
+    // var a = 20
+    // test1()
+    // test2()
+    // test3()
+    // console.log(a);
+
+    // console.log(window);
+
+
+    // function yeye() {
+    //     var a = 1000;
+    //     var b = 2000;
+    //     var c = 3000;
+
+    //     function fn() {
+    //         console.log('我是爷爷的方法');
+
+    //     }
+
+    // }
+
+
+
+    // function father() {
+    //     function fa() {
+
+    //         console.log('爸爸的方法');
+    //     }
+
+    // }
+
+    // function son() {
+    //     yeye.call(this)
+    //     console.log('儿子的方法');
+
+    // }
+    // son()
+
+
+
+
+    /* 面试题: */
+    // var name = "小貂蝉"
+    // var obj = {
+    //     name: "赵子龙",
+    //     showName: function () {
+    //         setTimeout(() => {
+    //             console.log(this, this.name)
+    //         }, 1000)
+    //     }
+    // }
+    // obj.showName()
+
+
+    // 对象1
+    // var user1 = {
+    //     name: "骚青松",
+    //     phone: function (a, b) {
+    //         console.log(this.name + "给小貂蝉打电话,")
+    //     }
+    // }
+    // user1.phone("哈哈", "嘻嘻")
+
+
+    // // 对象2
+    // var user2 = {
+    //     name: "葫芦岛吴奇隆"
+    // }
+
+    // // 借方法
+    // user1.phone.call(user2) // 立即执行
+    // user1.phone.apply(user2, ["哈哈", "嘻嘻"]) // 立即执行
+
+    function huqi() {
+        console.log('my love');
+    }
+</script>
+
+
+</html>
