@@ -10,39 +10,24 @@
       <div class="tab_box">
         <h1>标准出版社</h1>
         <p>标准数据智能服务平台</p>
-        <el-tabs
-          v-model="activeName"
-          @tab-click="handleClick"
-          class="tab_content"
-          stretch="true"
-        >
+        <el-tabs v-model="activeName" @tab-click="handleClick" class="tab_content" stretch="true">
           <el-tab-pane label="登录" name="first">
             <!-- 登录 -->
-            <el-input
-              placeholder="请输入用户名"
-              prefix-icon="el-icon-user-solid"
-              v-model="input1"
-            >
-            </el-input>
+            <el-input placeholder="请输入用户名" prefix-icon="el-icon-user-solid" v-model="username"></el-input>
             <el-input
               placeholder="请输入密码"
               prefix-icon="el-icon-lock"
-              v-model="input2"
+              v-model="password"
               show-password="yincang"
-            >
-            </el-input>
+            ></el-input>
             <!-- 登录按钮 -->
             <el-button
               type="primary"
-              style="width:100%;height:50px;margin-top:20px;
+              style="width:100%;height:45px;margin-top:20px;
               "
-              >立即登录</el-button
-            >
-            <el-button
-              style="width:100%;height:50px;margin-top:20px;
-              "
-              >忘记密码？</el-button
-            >
+            >立即登录</el-button>
+            <el-button style="width:100%;height:45px;margin-top:20px;
+              ">忘记密码？</el-button>
           </el-tab-pane>
           <el-tab-pane label="注册" name="second">
             <!-- 注册 -->
@@ -60,17 +45,17 @@ export default {
     return {
       // 默认选中登录
       activeName: "first",
-      input1: "",
-      input2: "",
+      username: "",
+      password: "",
 
-      yincang: true,
+      yincang: true
     };
   },
   methods: {
     handleClick(tab, event) {
       console.log(tab, event);
-    },
-  },
+    }
+  }
 };
 </script>
 <style lang="less" scoped>
@@ -92,7 +77,7 @@ export default {
       .tab_content {
         /deep/.el-input__inner {
           margin: 10px 0;
-          height: 55px;
+          height: 45px;
           border-radius: 50px;
         }
         .el-button + .el-button {
