@@ -1,10 +1,17 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
 
-Vue.config.productionTip = false
+// 引入elmentUI
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+
+import "./assets/reset.css";
+Vue.config.productionTip = false;
+
+Vue.use(ElementUI);
 
 new Vue({
   router,
-  render: h => h(App)
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");
