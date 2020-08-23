@@ -1,7 +1,5 @@
 <template>
-  <div class="app">
-    <router-view></router-view>
-  </div>
+  <div class="leftNav">左侧内容</div>
 </template>
 
 <script>
@@ -9,11 +7,9 @@ export default {};
 </script>
 
 <style lang="less" scoped>
-html,
-body {
+.leftNav {
+  width: 250px;
   height: 100%;
-  .app {
-    height: 100%;
-  }
+  background: red;
 }
 </style>
